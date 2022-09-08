@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="row">
+    <p class="legend text-center">
+      Determinar cual es el número menor
+    </p>
+    <div class="col">
+      <div class="container-sm ">
+        <label for="num-one">Ingresa el primer número</label>
+        <input class='text-center form-control' [(ngModel)]="num_one" type="number"  name="num-one" id="num-one">
+
+        <label for="num-two ">Ingresa el segundo número</label>
+        <input class='text-center form-control'  [(ngModel)]="num_two"  type="number"  name="num-two" id="num-two">
+
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="container boton">
+        <button type="button" class="btn-lg btn-outline-success" (click)="numMenor()">=</button>
+      </div>
+    </div>
+    <div class="col">
+      <div class="container-sm total">
+        <label class="text-center" for="total">Resultado</label>
+        <input class="text-center" placeholder='{{total}}'type="text" name="total" id="total" readonly>
+      </div>
+    </div>
+  </div>
+</div>
