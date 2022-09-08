@@ -1,27 +1,49 @@
 <div class="container-fluid">
   <div class="row">
-    <p class="legend text-center">
-      Suma dos numeros
-    </p>
+    <p class="legend text-center">Suma dos numeros</p>
     <div class="col">
-      <div class="container-sm ">
+      <div class="container-sm">
         <label for="num-one">Ingresa el primer número</label>
-        <input class='text-center form-control' [(ngModel)]="num_one" type="number"  name="num-one-suma" id="num-one-suma">
+        <input
+          class="text-center form-control"
+          [(ngModel)]="num_one"
+          type="number"
+          name="num-one-suma"
+          id="num-one-suma"
+        />
 
         <label for="num-two ">Ingresa el segundo número</label>
-        <input class='text-center form-control'  [(ngModel)]="num_two"  type="number"  name="num-two-suma" id="num-two-suma">
-
+        <input
+          class="text-center form-control"
+          [(ngModel)]="num_two"
+          type="number"
+          name="num-two-suma"
+          id="num-two-suma"
+        />
       </div>
     </div>
-    <div class="col-2">
-      <div class="container boton">
-        <button type="button" class="btn-lg btn-outline-success" (click)="Suma()">=</button>
+    <div class="col">
+      <div class="container text-center boton">
+        <button
+          type="button"
+          class="btn-lg btn-outline-success"
+          (click)="Suma()"
+        >
+          =
+        </button>
       </div>
     </div>
     <div class="col">
       <div class="container-sm total">
         <label class="text-center" for="total">Resultado</label>
-        <input class="text-center" placeholder='{{total}}'type="text" name="total-suma" id="total-suma" readonly>
+        <input
+          class="text-center"
+          placeholder="{{ total }}"
+          type="text"
+          name="total-suma"
+          id="total-suma"
+          readonly
+        />
       </div>
     </div>
   </div>
