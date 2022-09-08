@@ -16,7 +16,5 @@ export class NumMenorComponent implements OnInit {
 
   numMenor() {
     this.total = this.num_one < this.num_two ? this.num_one : this.num_two;
-    console.log(this.num_one);
-    console.log(this.num_two);
   }
 }
